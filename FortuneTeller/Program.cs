@@ -43,7 +43,7 @@ namespace FortuneTeller
             }
             Console.WriteLine("How many Siblings do you have?");
 
-            int sib = int.Parse(Console.ReadLine());
+            int siblings = int.Parse(Console.ReadLine());
 
             //// attemted stretch goal
             ////if user want to quit, type quit
@@ -79,58 +79,63 @@ namespace FortuneTeller
             {
                 Console.Write("You will be Poor with not even a penny in the bank,\n");
             }
+            // how many sibslings user has = where vac home will be
 
-            int siblings = 3;
-            switch (siblings)
+            
+            if (siblings == 0)
             {
-                case 1:
-                    Console.WriteLine("You will have a Vacation Home in Argentina ");
-                    break;
-                case 2:
-                    Console.WriteLine("You will have a VAcation Home in Paris ");
-                    break;
-                case 3:
-                    Console.WriteLine("You will have a Vacation Home in Hawaii ");
-                    break;
-                case 4:
-                    Console.WriteLine("You will have a Vacation Home in Florida ");
-                    break;
-                case 5:
-                    Console.WriteLine("You will have a Vacation Home in Colorado ");
-                    break;
-                default:
-                    Console.WriteLine("You will have a Vacation Home in Pennslyvania ");
-                    break;
+                Console.WriteLine("a Vacation Home in Argentina ");
             }
-            //still need to figue out how to streamline my code to less lines
-            //need to work on switch statements
+            else if (siblings == 1)
+            {
+                Console.WriteLine("a Vacation Home in Paris ");
+            }
+            else if (siblings == 2)
+            {
+                Console.WriteLine("a Vacation Home in Hawaii ");
+            }
+            else if (siblings == 3)
+            {
+                Console.WriteLine("a Vacation Home in Florida ");
+            }
+            else if (siblings >=4) 
+            {
+                Console.WriteLine("a Vacation Home in Colorado ");
+            }
+            else if (siblings < 0)
+            {
+                Console.WriteLine("a Vacation Home in Pennslyvania ");
+            }
+            // color input = what transportation they will have
+            //need to work on switch statements and when to use them
+
             if (color == "red")
             {
-                Console.Write("with a Pickup Truck as transportation. \n");
+                Console.WriteLine("with a Pickup Truck as transportation. \n");
             }
             else if (color == "orange")
-            {
-                Console.Write("with a Vespa Scooter as Transportation. \n");
+            { 
+                Console.WriteLine("with a Vespa Scooter as Transportation. \n");
             }
             else if (color == "yellow")
             {
-                Console.Write("with a Bmx Bicycle as Transportation. \n");
+                Console.WriteLine("with a Bmx Bicycle as Transportation. \n");
             }
             else if (color == "green")
             {
-                Console.Write("with a Station Wagon as Transportation. \n");
+                Console.WriteLine("with a Station Wagon as Transportation. \n");
             }
             else if (color == "blue")
             {
-                Console.Write("with a Sportscar as Transportation. \n");
+                Console.WriteLine("with a Sportscar as Transportation. \n");
             }
             else if (color == "indigo")
             {
-                Console.Write("and have a Unicorn as Transportation. \n");
+                Console.WriteLine("and have a Unicorn as Transportation. \n");
             }
             else if (color == "violet")
             {
-                Console.Write("You will have a Vehicle of your choice as Transportation. \n");
+                Console.WriteLine("You will have a  Private Jet Transportation. \n");
             }
             //end statement
             
