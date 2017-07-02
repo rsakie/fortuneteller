@@ -12,15 +12,15 @@ namespace FortuneTeller
         {
             // welcome header 
             Console.WriteLine("Welcome to the Wonderful, Amazing, Extrordinary Bobo The Fortune Teller!! \n");
-            Console.WriteLine("I am going to predict you future. \n");
+            Console.WriteLine("I am going to predict your future. \n");
             //have user enter info as promted f/l name,birth month
             //age as digit(int)
             //enter fav roygbiv, if dont know ask for help
             //
-            Console.WriteLine("Please enter your First Name please:");
+            Console.WriteLine("Please enter your First Name :");
             string fName = Console.ReadLine();
 
-            Console.WriteLine("Please enter your Last Name please:");
+            Console.WriteLine("Please enter your Last Name :");
             string lName = Console.ReadLine();
 
             Console.WriteLine("Please enter your Age: ");
@@ -31,7 +31,7 @@ namespace FortuneTeller
             int birthM = int.Parse(Console.ReadLine());
             //could not get code to error out or restart if birthM <1 or birthM>12
 
-            Console.WriteLine("Please enter your Favorite ROYGBIV Color:  if you do not know what ROYGBIV is enter \"Help\" ");
+            Console.WriteLine("Please enter your Favorite ROYGBIV Color:  if you do not know what ROYGBIV is   enter \"Help\" ");
             string color = Console.ReadLine();
             if (color.ToLower() == "help")
             {
@@ -54,23 +54,23 @@ namespace FortuneTeller
             }
             if (age % 2 == 0)
             {
-                Console.Write(" you will Retire in 25 years,\n");
+                Console.Write(" you will Retire in 35 years,\n");
             }
             else
             {
-                Console.Write(" you will Retire in 10 years,\n");
+                Console.Write(" you will Retire in 40 years,\n");
             }
             if (birthM >= 1 && birthM <= 4)
             {
-                Console.Write("You will be Blessed with a fortune of $12,000.41 in the bank at retirement,\n");
+                Console.Write("You will be Blessed with a fortune of $42,000 in the bank upon retirement,\n");
             }
             else if (birthM >= 5 && birthM <= 8)
             {
-                Console.Write("You will be blessed with a fortune of $20,000.90 in the bank at retirement,\n");
+                Console.Write("You will be blessed with a fortune of $90,000.90 in the bank upon retirement,\n");
             }
             else if (birthM >= 9 && birthM <= 12)
             {
-                Console.Write("You will be blessed with $15,000.55 in the bank at retirement,\n");
+                Console.Write("You will be blessed with $35,000.55 in the bank upon retirement,\n");
             }
             else if (birthM > 12 && birthM < 1)
             {
@@ -105,31 +105,31 @@ namespace FortuneTeller
             //need to work on switch statements
             if (color == "red")
             {
-                Console.Write("with a Pickup Truck as transportation.\n");
+                Console.Write("with a Pickup Truck as transportation. \n");
             }
             else if (color == "orange")
             {
-                Console.Write("with a Vespa Scooter as Transportation.\n");
+                Console.Write("with a Vespa Scooter as Transportation. \n");
             }
             else if (color == "yellow")
             {
-                Console.Write("with a Bmx Bicycle as Transportation.\n");
+                Console.Write("with a Bmx Bicycle as Transportation. \n");
             }
             else if (color == "green")
             {
-                Console.Write("with a Station Wagon as Transportation.\n");
+                Console.Write("with a Station Wagon as Transportation. \n");
             }
             else if (color == "blue")
             {
-                Console.Write("with a Sportscar as Transportation.\n");
+                Console.Write("with a Sportscar as Transportation. \n");
             }
             else if (color == "indigo")
             {
-                Console.Write("and have a Unicorn as Transportation.\n");
+                Console.Write("and have a Unicorn as Transportation. \n");
             }
             else if (color == "violet")
             {
-                Console.Write("You will have a Vehicle of your choice as Transportation.\n");
+                Console.Write("You will have a Vehicle of your choice as Transportation. \n");
             }
             //end statement
             Console.WriteLine(" \n Thank you for letting me predict your future!!");
