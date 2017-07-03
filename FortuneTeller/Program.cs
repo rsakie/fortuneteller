@@ -82,7 +82,7 @@ namespace FortuneTeller
             // how many sibslings user has = where vac home will be
 
             
-            if (siblings == 0)
+            if (siblings == 0 )
             {
                 Console.WriteLine("a Vacation Home in Argentina ");
             }
